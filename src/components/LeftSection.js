@@ -1,6 +1,6 @@
 import React from 'react';
 import LeftLowerButtons from './LeftLowerButtons';
-import pokemonList from '../js/pokemon';
+import pokemonList from './js/pokemon';
 import PropTypes from 'prop-types';
 
 LeftSection.propTypes = {

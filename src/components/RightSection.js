@@ -1,10 +1,18 @@
 import React from 'react';
-import pokemonList from '../js/pokemon';
+import pokemonList from './js/pokemon';
+import PropTypes from 'prop-types';
+
+RightSection.propTypes = {
+  pokemonIndex: PropTypes.number,
+  setpokemonIndex: PropTypes.func,
+  inputValue: PropTypes.number,
+  setInputValue: PropTypes.func,
+};
 
 function RightSection(props) {
   return (
     <div id="right">
-      <div id="info-screen">{pokemonList[props.pokemonIndex] || 'this pokemon doesn\'t exist'}</div>
+      <div id="info-screen">{getInfoScreenString(props)}</div>
       <div id="keyboard">
         <div className="key"></div>
         <div className="key"></div>
@@ -34,6 +42,10 @@ function RightSection(props) {
       <div id="square-button-right2"></div>
     </div>
   );
+}
+
+function getInfoScreenString(props) {
+  return pokemonList[props.pokemonIndex] || 'this pokemon doesn\'t exist';
 }
 
 export default RightSection;

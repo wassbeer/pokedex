@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import pokemonList from '../js/pokemon';
+import pokemonList from './js/pokemon';
 import LeftSection from './LeftSection';
 import RightSection from './RightSection';
 

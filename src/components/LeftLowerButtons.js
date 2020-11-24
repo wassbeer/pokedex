@@ -1,5 +1,5 @@
 import React from 'react';
-import pokemonList from '../js/pokemon';
+import pokemonList from './js/pokemon';
 import PropTypes from 'prop-types';
 
 LeftLowerButtons.propTypes = {
