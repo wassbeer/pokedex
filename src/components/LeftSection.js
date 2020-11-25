@@ -25,9 +25,6 @@ function LeftSection(props) {
         </div>
       </div>
       <div id="top-left2"></div>
-      <div id="logo">
-        <img src="img/pokedex/logo-pokemon.png" alt="logo pokedex" />
-      </div>
       <div id="border-screen">
         <div id="button-top1"></div>
         <div id="button-top2"></div>
